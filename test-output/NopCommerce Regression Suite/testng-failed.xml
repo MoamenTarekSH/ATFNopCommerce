@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [NopCommerce Regression Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="Browser" value="chrome"/>
+  <test thread-count="5" name="Regression Test(failed)">
+    <classes>
+      <class name="Tests.EmailFriendTest">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="ScreenShotOnFailure"/>
+          <include name="tearDownClass"/>
+          <include name="OpenWebSite"/>
+          <include name="TestEmailFriend"/>
+        </methods>
+      </class> <!-- Tests.EmailFriendTest -->
+      <class name="Tests.AddToWishTest">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="ScreenShotOnFailure"/>
+          <include name="TestWishList"/>
+          <include name="tearDownClass"/>
+          <include name="TestSearch"/>
+          <include name="TestAddToWish"/>
+          <include name="OpenWebSite"/>
+        </methods>
+      </class> <!-- Tests.AddToWishTest -->
+      <class name="Tests.CheckOutRegisteredTest">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="ScreenShotOnFailure"/>
+          <include name="tearDownClass"/>
+          <include name="TestCheckOutSteps"/>
+          <include name="OpenCartPageThenCheckPage"/>
+          <include name="OpenWebSite"/>
+        </methods>
+      </class> <!-- Tests.CheckOutRegisteredTest -->
+      <class name="Tests.AddToComperTest">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="ScreenShotOnFailure"/>
+          <include name="TestComparePage"/>
+          <include name="tearDownClass"/>
+          <include name="OpenWebSite"/>
+        </methods>
+      </class> <!-- Tests.AddToComperTest -->
+      <class name="Tests.ContactUsTest">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="ScreenShotOnFailure"/>
+          <include name="TestContactUs"/>
+          <include name="tearDownClass"/>
+          <include name="OpenWebSite"/>
+        </methods>
+      </class> <!-- Tests.ContactUsTest -->
+      <class name="Tests.ChangeCurrencyTest">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="ScreenShotOnFailure"/>
+          <include name="TestSearch"/>
+          <include name="tearDownClass"/>
+          <include name="TestChangeCurrency"/>
+          <include name="OpenWebSite"/>
+        </methods>
+      </class> <!-- Tests.ChangeCurrencyTest -->
+      <class name="Tests.AddToCartTest">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="ScreenShotOnFailure"/>
+          <include name="TestCartPage"/>
+          <include name="tearDownClass"/>
+          <include name="OpenWebSite"/>
+        </methods>
+      </class> <!-- Tests.AddToCartTest -->
+      <class name="Tests.ReviewTest">
+        <methods>
+          <include name="TestSearchAutoSuggest"/>
+          <include name="setUpClass"/>
+          <include name="ScreenShotOnFailure"/>
+          <include name="tearDownClass"/>
+          <include name="TestMakingReview"/>
+          <include name="OpenWebSite"/>
+        </methods>
+      </class> <!-- Tests.ReviewTest -->
+      <class name="Tests.HoverMenuTest">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="ScreenShotOnFailure"/>
+          <include name="TestHoverComputersMenu"/>
+          <include name="tearDownClass"/>
+          <include name="OpenWebSite"/>
+        </methods>
+      </class> <!-- Tests.HoverMenuTest -->
+      <class name="Tests.SearchTest">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="ScreenShotOnFailure"/>
+          <include name="TestSearch"/>
+          <include name="tearDownClass"/>
+          <include name="OpenWebSite"/>
+        </methods>
+      </class> <!-- Tests.SearchTest -->
+      <class name="Tests.SearchAutoSuggestTest">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="ScreenShotOnFailure"/>
+          <include name="TestSearchAutoSuggest"/>
+          <include name="tearDownClass"/>
+          <include name="OpenWebSite"/>
+        </methods>
+      </class> <!-- Tests.SearchAutoSuggestTest -->
+    </classes>
+  </test> <!-- Regression Test(failed) -->
+</suite> <!-- Failed suite [NopCommerce Regression Suite] -->

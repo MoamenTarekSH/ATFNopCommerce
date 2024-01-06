@@ -1,0 +1,85 @@
+package Tests;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
+
+import Utilities.Helper;
+import io.cucumber.testng.AbstractTestNGCucumberTests;
+
+public class TestBase  extends AbstractTestNGCucumberTests
+{
+
+	public static WebDriver driver;
+
+
+	@BeforeSuite
+	@Parameters({"Browser"})
+	public void OpenWebSite(@Optional("chrome") String broswerName) 
+	{
+		if(broswerName.equalsIgnoreCase("chrome"))
+		{
+			driver = new ChromeDriver();
+		}
+		else if(broswerName.equalsIgnoreCase("firefox"))
+		{
+			driver = new FirefoxDriver();
+		}
+		else if(broswerName.equalsIgnoreCase("ie"))
+		{
+			driver = new InternetExplorerDriver();
+		}
+		driver.manage().window().maximize();
+		driver.get("https://demo.nopcommerce.com/");
+		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+
+
+	}
+
+
+	//@AfterSuite
+	public void CloseDriver()
+	{
+		driver.quit();
+	}
+
+	
+	
+	
+	@AfterMethod
+	public void ScreenShotOnFailure(ITestResult Result)
+	{
+		if(Result.getStatus()== ITestResult.FAILURE)
+		{
+			System.out.println("Failed!");
+			System.out.println("Takeing ScreenShot....");
+			Helper.TakeScreenShoot(driver, Result.getName());
+		}
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+}

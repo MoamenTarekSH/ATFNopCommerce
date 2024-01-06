@@ -1,0 +1,14 @@
+PagesObjects\CheckOutPage.class
+PagesObjects\WishListPage.class
+PagesObjects\LoginPage.class
+PagesObjects\PageBase.class
+PagesObjects\EmailFriend.class
+PagesObjects\ChangePassword.class
+PagesObjects\ContactUs.class
+PagesObjects\HomePage.class
+PagesObjects\CartPage.class
+PagesObjects\DetailsItemPage.class
+PagesObjects\UserRegistrationPageObj.class
+PagesObjects\SearchPage.class
+PagesObjects\ComperPage.class
+PagesObjects\ItemReviewPage.class
