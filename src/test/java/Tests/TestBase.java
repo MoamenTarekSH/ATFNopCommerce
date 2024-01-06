@@ -8,20 +8,18 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import Utilities.Helper;
-import io.cucumber.testng.AbstractTestNGCucumberTests;
 
-public class TestBase  extends AbstractTestNGCucumberTests
+public class TestBase  
 {
 
+	
+
 	public static WebDriver driver;
-
-
 	@BeforeSuite
 	@Parameters({"Browser"})
 	public void OpenWebSite(@Optional("chrome") String broswerName) 

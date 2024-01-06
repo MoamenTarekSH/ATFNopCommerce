@@ -99,7 +99,7 @@ public class CheckOutPage extends PageBase
 	public void CheckOutInput(String city,String address , String zip , String phone ) throws InterruptedException
 	{
 		Select select = new Select(Contry);
-		select.selectByValue("201");
+		select.selectByValue("123");
 		EnterTXT(City, city);
 		EnterTXT(Address1, address);
 		EnterTXT(ZIP, zip);

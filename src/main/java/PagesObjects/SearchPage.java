@@ -17,7 +17,6 @@ public class SearchPage extends PageBase{
 	public SearchPage(WebDriver driver) 
 	{
 		super(driver);
-		wait = new WebDriverWait(driver, Duration.ofSeconds(30)) ;
 		JSE = (JavascriptExecutor) driver ;
 		Act = new Actions(driver);
 	}
